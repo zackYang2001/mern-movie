@@ -28,7 +28,7 @@ const tmdbEndpoints = {
     personDetail: ({ personId }) => tmdbConfig.getUrl(
         `person/${personId}`
     ),
-    personMedia: ({ personId }) => tmdbConfig.getUrl(
+    personMedias: ({ personId }) => tmdbConfig.getUrl(
         `person/${personId}/combined_credits`
     ),
 }
