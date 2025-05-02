@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-import modelOptions from "./model.options";
+import modelOptions from "./model.options.js";
 
 // 新增一個關聯式資料結構
 export default mongoose.model(
