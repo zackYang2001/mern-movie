@@ -17,7 +17,7 @@ const ok = (res, data) => responseWithData(res, 200, data);
 
 const created = (res, data) => responseWithData(res, 201, data);
 
-const unauthorize = (res) =>
+const unauthorized = (res) =>
   responseWithData(res, 401, {
     status: 401,
     message: "Unauthorized",
@@ -34,6 +34,6 @@ export default {
   badrequest,
   ok,
   created,
-  unauthorize,
+  unauthorized,
   notfound,
 };

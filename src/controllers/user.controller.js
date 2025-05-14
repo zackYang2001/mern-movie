@@ -89,7 +89,7 @@ const updatePassword = async (req, res) => {
       .findById(req.user.id)
       .select("password id salt");
 
-    if (!user) return responseHandler.unauthorize(res);
+    if (!user) return responseHandler.unauthorized(res);
 
     if (!user.validPassword(password))
       return responseHandler.badrequest(res, "Wrong password");
