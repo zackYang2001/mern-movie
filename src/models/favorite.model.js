@@ -13,7 +13,7 @@ export default mongoose.model(
       },
       mediaType: {
         type: String,
-        enum: ["TV", "movie"], // enumeration 為列舉，也就是固定只能有這兩個選項
+        enum: ["tv", "movie"], // enumeration 為列舉，也就是固定只能有這兩個選項
         required: true,
       },
       mediaId: {
